@@ -1,3 +1,0 @@
-D:\Git\Coop_Game_Prototype\Coop_Game_Prototype\Source\Coop_Game_Prototype\Coop_Game_Prototype.Build.cs
-D:\Git\Coop_Game_Prototype\Coop_Game_Prototype\Source\Coop_Game_Prototype.Target.cs
-D:\Git\Coop_Game_Prototype\Coop_Game_Prototype\Source\Coop_Game_PrototypeEditor.Target.cs

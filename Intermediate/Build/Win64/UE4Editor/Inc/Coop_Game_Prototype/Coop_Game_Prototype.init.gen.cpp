@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeCoop_Game_Prototype_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/Coop_Game_Prototype",
 				PKG_CompiledIn | 0x00000000,
-				0x5B952C4A,
-				0x781BB206,
+				0x89203B20,
+				0xE13AB1A8,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

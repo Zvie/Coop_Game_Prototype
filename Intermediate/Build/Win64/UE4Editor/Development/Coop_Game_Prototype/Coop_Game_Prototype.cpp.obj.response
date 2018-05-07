@@ -24,9 +24,10 @@
 /wd4838
 /w44668
 /I "C:\Program Files\Epic Games\UE_4.19\Engine\Source"
-/I D:\Git\Coop_Game_Prototype\Coop_Game_Prototype\Source
-/I D:\Git\Coop_Game_Prototype\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Inc\Coop_Game_Prototype
-/I D:\Git\Coop_Game_Prototype\Coop_Game_Prototype\Source\Coop_Game_Prototype
+/I D:\Git\Coop_Game_Prototype\Source
+/I D:\Git\Coop_Game_Prototype\Source\Coop_Game_Prototype\Public
+/I D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Inc\Coop_Game_Prototype
+/I D:\Git\Coop_Game_Prototype\Source\Coop_Game_Prototype
 /I "C:\Program Files\Epic Games\UE_4.19\Engine\Source\Runtime\Core\Public"
 /I "C:\Program Files\Epic Games\UE_4.19\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "C:\Program Files\Epic Games\UE_4.19\Engine\Source\Runtime\Core\Public\Async"
@@ -364,9 +365,9 @@
 /FI"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Yu"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Fp"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\Git\Coop_Game_Prototype\Coop_Game_Prototype\Source\Coop_Game_Prototype\Coop_Game_Prototype.cpp"
-/FI"D:\Git\Coop_Game_Prototype\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\Definitions.Coop_Game_Prototype.h"
-/Fo"D:\Git\Coop_Game_Prototype\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\Coop_Game_Prototype.cpp.obj"
+"D:\Git\Coop_Game_Prototype\Source\Coop_Game_Prototype\Coop_Game_Prototype.cpp"
+/FI"D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\Definitions.Coop_Game_Prototype.h"
+/Fo"D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\Coop_Game_Prototype.cpp.obj"
 /TP
 /GR-
 /W4

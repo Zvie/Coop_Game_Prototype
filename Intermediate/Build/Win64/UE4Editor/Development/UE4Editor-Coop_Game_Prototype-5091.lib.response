@@ -1,0 +1,20 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Coop_Game_Prototype-5091.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\Coop_Game_Prototype.cpp.obj"
+"D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\Coop_Game_PrototypeGameModeBase.cpp.obj"
+"D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\SCharacter.cpp.obj"
+"D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\SWeapon.cpp.obj"
+"D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\Coop_Game_Prototype.init.gen.cpp.obj"
+"D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\Coop_Game_PrototypeGameModeBase.gen.cpp.obj"
+"D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\SCharacter.gen.cpp.obj"
+"D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\SWeapon.gen.cpp.obj"
+"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Coop_Game_Prototype\PCLaunch.rc.res"
+"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"D:\Git\Coop_Game_Prototype\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Coop_Game_Prototype-5091.lib"

@@ -57,12 +57,18 @@
     <ClInclude Include="..\..\Source\Coop_Game_Prototype\Public\SWeapon.h">
       <Filter>Source\Coop_Game_Prototype\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Coop_Game_Prototype\Public\SProjectileWeapon.h">
+      <Filter>Source\Coop_Game_Prototype\Public</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Coop_Game_Prototype\Private\SCharacter.cpp">
       <Filter>Source\Coop_Game_Prototype\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Coop_Game_Prototype\Private\SWeapon.cpp">
+      <Filter>Source\Coop_Game_Prototype\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Coop_Game_Prototype\Private\SProjectileWeapon.cpp">
       <Filter>Source\Coop_Game_Prototype\Private</Filter>
     </ClCompile>
   </ItemGroup>

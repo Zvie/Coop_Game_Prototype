@@ -4,6 +4,8 @@
 #include <Components/SkeletalMeshComponent.h>
 #include "DrawDebugHelpers.h"
 #include "Kismet/GameplayStatics.h"
+#include "Particles/ParticleSystem.h"
+#include "Particles/ParticleSystemComponent.h"
 
 // Sets default values
 ASWeapon::ASWeapon()
@@ -14,6 +16,8 @@ ASWeapon::ASWeapon()
 	MeshComp = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("MeshComp"));
 	RootComponent = MeshComp;
 
+	MuzzleSocket = "Muzzle";
+	TracerTargetName = "Target";
 }
 
 // Called when the game starts or when spawned
@@ -44,6 +48,8 @@ void ASWeapon::Fire()
 		QueryParams.AddIgnoredActor(this);
 		QueryParams.bTraceComplex = true; // this is more computationally expensive but gives the exact result where we hit something
 
+		// particle "Target" parameter
+		FVector TracerEndPoint = TraceEnd;
 
 		// this is a struct filled with data
 		FHitResult Hit;
@@ -55,9 +61,39 @@ void ASWeapon::Fire()
 			AActor* HitActor = Hit.GetActor();
 
 			UGameplayStatics::ApplyPointDamage(HitActor, 20.0f, ShotDirection, Hit, MyOwner->GetInstigatorController(), this, DamageType);
+			
+			if (ImpactEffect) 
+			{
+				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactEffect, Hit.ImpactPoint, Hit.ImpactNormal.Rotation());
+			}
+			
+			TracerEndPoint = Hit.ImpactPoint;
+
 		}
 
-		DrawDebugLine(GetWorld(), EyeLocation, TraceEnd, FColor::White, false, 1.0f, 0, 1.0f);
+		
+
+		// check if this was assigned by the designer so the engine doesn't crash
+		if (MuzzleEffect) 
+		{
+			UGameplayStatics::SpawnEmitterAttached(MuzzleEffect, MeshComp, MuzzleSocket);
+		}
+		
+		
+
+		if (TracerEffect) {
+			FVector MuzzleLocation = MeshComp->GetSocketLocation(MuzzleSocket);
+
+			UParticleSystemComponent* TracerComp = UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), TracerEffect, MuzzleLocation);
+
+			if (TracerComp) 
+			{
+				TracerComp->SetVectorParameter(TracerTargetName, TracerEndPoint);
+			}
+		}
+
+		
+
 	}
 
 	

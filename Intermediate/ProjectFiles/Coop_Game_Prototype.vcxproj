@@ -407,8 +407,10 @@
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Coop_Game_Prototype\Private\SCharacter.cpp" />
+    <ClCompile Include="..\..\Source\Coop_Game_Prototype\Private\SProjectileWeapon.cpp" />
     <ClCompile Include="..\..\Source\Coop_Game_Prototype\Private\SWeapon.cpp" />
     <ClInclude Include="..\..\Source\Coop_Game_Prototype\Public\SCharacter.h" />
+    <ClInclude Include="..\..\Source\Coop_Game_Prototype\Public\SProjectileWeapon.h" />
     <ClInclude Include="..\..\Source\Coop_Game_Prototype\Public\SWeapon.h" />
     <None Include="..\..\Coop_Game_Prototype.uproject" />
     <None Include="..\..\Source\Coop_Game_Prototype.Target.cs" />

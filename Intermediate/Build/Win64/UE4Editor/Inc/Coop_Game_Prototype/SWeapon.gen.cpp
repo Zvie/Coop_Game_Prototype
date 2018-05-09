@@ -85,12 +85,19 @@ void EmptyLinkFunctionForGeneratedCodeSWeapon() {}
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TracerEffect = { UE4CodeGen_Private::EPropertyClass::Object, "TracerEffect", RF_Public|RF_Transient|RF_MarkAsNative, 0x0020080000010015, 1, nullptr, STRUCT_OFFSET(ASWeapon, TracerEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(NewProp_TracerEffect_MetaData, ARRAY_COUNT(NewProp_TracerEffect_MetaData)) };
 #if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ImpactEffect_MetaData[] = {
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FleshImpactEffect_MetaData[] = {
 				{ "Category", "Weapon" },
 				{ "ModuleRelativePath", "Public/SWeapon.h" },
 			};
 #endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ImpactEffect = { UE4CodeGen_Private::EPropertyClass::Object, "ImpactEffect", RF_Public|RF_Transient|RF_MarkAsNative, 0x0020080000010015, 1, nullptr, STRUCT_OFFSET(ASWeapon, ImpactEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(NewProp_ImpactEffect_MetaData, ARRAY_COUNT(NewProp_ImpactEffect_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FleshImpactEffect = { UE4CodeGen_Private::EPropertyClass::Object, "FleshImpactEffect", RF_Public|RF_Transient|RF_MarkAsNative, 0x0020080000010015, 1, nullptr, STRUCT_OFFSET(ASWeapon, FleshImpactEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(NewProp_FleshImpactEffect_MetaData, ARRAY_COUNT(NewProp_FleshImpactEffect_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DefaultImpactEffect_MetaData[] = {
+				{ "Category", "Weapon" },
+				{ "ModuleRelativePath", "Public/SWeapon.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DefaultImpactEffect = { UE4CodeGen_Private::EPropertyClass::Object, "DefaultImpactEffect", RF_Public|RF_Transient|RF_MarkAsNative, 0x0020080000010015, 1, nullptr, STRUCT_OFFSET(ASWeapon, DefaultImpactEffect), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(NewProp_DefaultImpactEffect_MetaData, ARRAY_COUNT(NewProp_DefaultImpactEffect_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MuzzleEffect_MetaData[] = {
 				{ "Category", "Weapon" },
@@ -130,7 +137,8 @@ void EmptyLinkFunctionForGeneratedCodeSWeapon() {}
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FireCamShake,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_TracerEffect,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ImpactEffect,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FleshImpactEffect,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_DefaultImpactEffect,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MuzzleEffect,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_TracerTargetName,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MuzzleSocket,
@@ -155,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeSWeapon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASWeapon, 13706498);
+	IMPLEMENT_CLASS(ASWeapon, 1375741724);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ASWeapon(Z_Construct_UClass_ASWeapon, &ASWeapon::StaticClass, TEXT("/Script/Coop_Game_Prototype"), TEXT("ASWeapon"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ASWeapon);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

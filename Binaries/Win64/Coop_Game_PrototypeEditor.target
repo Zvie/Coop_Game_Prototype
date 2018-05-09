@@ -16,15 +16,15 @@
 	},
 	"BuildProducts": [
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Coop_Game_Prototype-8914.dll",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Coop_Game_Prototype-2117.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Coop_Game_Prototype-8914.pdb",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Coop_Game_Prototype-2117.pdb",
 			"Type": "SymbolFile"
 		},
 		{
-			"Path": "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Coop_Game_Prototype-8914.lib",
+			"Path": "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Coop_Game_Prototype-2117.lib",
 			"Type": "ImportLibrary"
 		},
 		{
